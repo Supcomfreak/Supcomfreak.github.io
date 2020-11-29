@@ -161,7 +161,7 @@ crossorigin="anonymous"></script>
   let parenthesis = 'keep'
   let implicit = 'hide'
 
-  temperatureinput.value = "((14.5*p1)^(1/4))*100";
+  temperatureinput.value = "(((p1/14.5)^(1/4))*100)*(9/5)+32";
   temperatureEquationDisplay.innerHTML = '';
   temperatureEquationDisplay.appendChild(mj(math.parse(temperatureinput.value).toTex({parenthesis: parenthesis})));
 
