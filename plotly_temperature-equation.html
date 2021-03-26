@@ -311,7 +311,7 @@ function steamlossfromload(load) {
 		document.getElementById("ex-Qwbinary").innerHTML = "Qw test false"
 	}
 	document.getElementById("ex-maxspecial").innerHTML = "Max Load Special Multiplier: " + CSswitch(inputs["l1"]/lsimple(1));
-	document.getElementById("ex-runspecial").innerHTML = "Running Load Special Multiplier: " + CSswitch(inputs["l2"]/lsimple(1));
+	document.getElementById("ex-runspecial").innerHTML = "Minimum Load Special Multiplier: " + CSswitch(inputs["l2"]/lsimple(1));
 
 	document.getElementById("orificedisplay").innerHTML = units[currentUnit].toLengthConvert(inputs["diameter"]).toFixed(3);
 	document.getElementById("l1msdisplay").innerHTML = "Steam Loss (" + units[currentUnit]['load'] + "): " + units[currentUnit].toLoadConvert(steamlossfromload(inputs["l1"])).toFixed(2);
